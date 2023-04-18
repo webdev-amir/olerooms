@@ -1,0 +1,13 @@
+{
+    "name": "Amenities",
+    "alias": "amenities",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Amenities\\Providers\\AmenitiesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

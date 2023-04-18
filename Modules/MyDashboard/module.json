@@ -1,0 +1,13 @@
+{
+    "name": "MyDashboard",
+    "alias": "mydashboard",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MyDashboard\\Providers\\MyDashboardServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

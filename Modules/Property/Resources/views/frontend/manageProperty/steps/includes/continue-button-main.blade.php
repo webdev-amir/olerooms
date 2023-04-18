@@ -1,0 +1,1 @@
+<button class="btn customBtn btn-success minw-184 directSubmit nextButton_{{$dataStepNo}}" id="{{$dataIdSubmit}}" type="submit" data-loader="{{$dataLoaderContent}}" data-title="{{$dataTitleContent}}">@lang('Continue')</button>

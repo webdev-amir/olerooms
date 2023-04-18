@@ -1,0 +1,13 @@
+{
+    "name": "EmailNotifications",
+    "alias": "emailnotifications",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\EmailNotifications\\Providers\\EmailNotificationsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,1511 @@
+@media (max-width: 1680px) {
+    .selectProperty .form-check {
+        margin-right: 15px;
+    }
+    .step_rightPanel {
+        padding-left: 250px;
+    }
+    .step_leftPanel {
+        width: 250px;
+        padding: 20px;
+    }
+    .step_leftPanel p {
+        font-size: 16px;
+    }
+    .staticBox .card {
+        width: 210px;
+    }
+    .form-group.w-35 {
+        width: 50%;
+    }
+}
+@media (max-width: 1366px) {
+    .key_features .bravo-list-hotel .item-loop .item-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .key_features .description_text {
+        font-size: 14px;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .selectProperty .propertyIcon {
+        width: 140px;
+        height: 140px;
+    }
+    .selectProperty .propertyIcon img {
+        width: 114px;
+        height: 100px;
+    }
+}
+@media (max-width: 1199px) {
+    .bravo_wrap .bravo_detail_space .bravo_content .g-header h1 {
+        font-size: 24px;
+    }
+    .bravo_wrap .bravo_detail_space .bravo_content h3 {
+        font-size: 1.7rem;
+    }
+    .bravo_wrap .bravo_detail_space .bravo_content .g-header h1 span {
+        font-size: 15px;
+    }
+    .owner-info .media-body .media-heading {
+        font-size: 18px;
+    }
+    .bravo_wrap
+        .bravo_detail_space
+        .bravo_content
+        .g-header
+        .review-score
+        .head {
+        font-size: 20px;
+    }
+    .bravo_wrap
+        .bravo_detail_space
+        .bravo_content
+        .g-header
+        .review-score
+        .head
+        .score {
+        font-size: 25px;
+    }
+    .bravo_wrap .bravo_header .bravo-menu-mobile {
+        left: -300px;
+    }
+    .bravo_wrap .bravo_header .content .header-left {
+        width: auto;
+    }
+    .bravo_wrap .bravo_header .content .header-right {
+        width: 30%;
+        display: none;
+    }
+    .bravo-logo img {
+        width: 100%;
+        max-width: 190px;
+    }
+    .bravo-form-search-slider .owl-nav {
+        padding: 0px 20px;
+    }
+    .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li a {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+    .bravo_wrap .bravo_header .content .header-right .btn-primary {
+        min-width: inherit;
+    }
+    .bravo_wrap
+        .bravo_form
+        .g-field-search
+        .row
+        .border-right:last-child
+        .form-group {
+        border-bottom: 0px;
+    }
+    .mapview {
+        height: auto;
+    }
+    .customer_trust .list-item:before,
+    .customer_trust .list-item:after {
+        width: 68px;
+        display: none;
+    }
+    .feedbackouter figure {
+        max-width: 100px;
+        height: 100px;
+    }
+    .whyus_section .bgimage {
+        width: 100%;
+    }
+    .step_leftPanel {
+        position: unset;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .step_leftPanel .leftcontent {
+        padding: 0px;
+        margin-top: 13px;
+    }
+    .step_leftPanel .staticBox {
+        display: none;
+    }
+    .step_leftPanel p {
+        margin-top: 0px !important;
+    }
+    .step_rightPanel {
+        padding: 0px 15px;
+    }
+    .step_rightPanel .rightPanel_inner {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .selectProperty {
+        overflow-x: scroll;
+    }
+    .selectProperty .propertyText {
+        font-size: 14px;
+    }
+    .dasboard_box {
+        margin-bottom: 20px;
+    }
+    .dasboard_box p {
+        font-size: 30px;
+    }
+    .bookingrequest_box,
+    .bookingrequest_box .box_inner,
+    .bookingrequest_box .content {
+        flex-direction: column;
+    }
+    .requestBtn {
+        border: 1px solid #ebf0f4;
+    }
+    .requestBtn a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .bookingrequest_box figure {
+        max-width: 100%;
+    }
+    .bookingrequest_box .content {
+        margin-top: 20px;
+    }
+    .bookingrequest_box .contentRight {
+        margin-right: 0px !important;
+        margin-top: 15px;
+    }
+    .bookingrequest_box .contentRight p {
+        justify-content: start !important;
+    }
+    .bookingrequest_box .box_inner .contentLeft {
+        width: 100%;
+    }
+    .bookingrequest_box .inOut_date span {
+        font-size: 15px;
+    }
+    .booking-flex-mobile {
+        display: block !important;
+        margin-bottom: 20px;
+    }
+    .booking-flex-mobile .col-lg-4 {
+        max-width: 100%;
+        padding-right: 15px !important;
+    }
+    .accordionCustom .visit-new-add figure {
+        margin-right: 20px;
+    }
+
+    .bravo_wrap .bravo_header {
+        padding: 10px 0px;
+    }
+    .innerSearch_row {
+        min-height: auto !important;
+        display: block !important;
+    }
+    .innerSearch_row .bravo-menu {
+        display: none;
+    }
+    .innerSearch_row .bravo-menu.show {
+        display: block !important;
+    }
+    .innerSearch_row .bravo-menu.hide {
+        display: none !important;
+    }
+    .innerSearch_row .searchproperty_btn {
+        display: block !important;
+        max-width: 120px;
+        float: right;
+    }
+    .innerSearch_row .bravo-menu form {
+        border: 1px solid #e5e5e5;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 50px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .innerSearch_row .bravo-menu form .g-field-search {
+        width: 100%;
+        min-width: auto !important;
+    }
+    .innerSearch_row .bravo-menu form .g-field-search .col {
+        padding: 0px;
+    }
+    .innerSearch_row .bravo-menu form .g-field-search .list-cal {
+        display: block;
+        border: 0px;
+    }
+    .innerSearch_row .bravo-menu form .g-field-search .list-cal .col-md-5,
+    .innerSearch_row .bravo-menu form .g-field-search .list-cal .col-md-4,
+    .innerSearch_row .bravo-menu form .g-field-search .list-cal .col,
+    .innerSearch_row .bravo-menu form .g-field-search .list-cal .col-md-2 {
+        max-width: 100%;
+    }
+    .innerSearch_row .bravo-menu form .g-field-search .form-group {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .innerSearch_row .bravo-menu form .g-button-submit {
+        padding: 15px 10px;
+        max-width: 98%;
+        width: 100% !important;
+    }
+    .innerSearch_row .bravo-menu form .g-button-submit .btn {
+        border-radius: 10px !important;
+        width: 100% !important;
+        font-size: 17px !important;
+    }
+    .innerSearch_row .bravo-menu form .g-button-submit .btn i {
+        padding-right: 11px;
+    }
+    .bravo_wrap .bravo_form .g-field-search {
+        flex: 0 0 80%;
+    }
+    .bravo_wrap .bravo_form .input-search:after,
+    .bravo_wrap .bravo_form .smart-search:after {
+        right: 15px;
+    }
+    .bravo_wrap .bravo_form .g-button-submit {
+        max-width: 100% !important;
+        display: inline-block;
+        padding: 20px;
+        border-top: 1px solid #f2f8fc;
+    }
+    .bravo_wrap .bravo_form .g-button-submit button {
+        width: 100%;
+        margin: 0px;
+        line-height: normal;
+        border-radius: 5px !important;
+    }
+}
+@media (max-width: 1023px) {
+    .control-topsearch {
+        margin-top: 20px;
+    }
+    #searchinner_menu .download_app,
+    #searchinner_menu li,
+    #searchinner_menu li a,
+    #searchinner_menu li a button {
+        font-size: 13px;
+        margin: 10px 0px 0;
+        width: 100%;
+        border: 0;
+    }
+    /* #searchinner_menu li a button i {
+        margin: 0px !important;
+    } */
+    #searchinner_menu ul {
+        position: absolute;
+        top: 60px;
+        flex-direction: column;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 10px;
+        width: 200px;
+        padding: 10px 7px;
+        right: 0;
+    }
+    #searchinner_menu li a i {
+        font-size: 17px;
+    }
+    #searchinner_menu .download_app {
+        margin-left: 10px;
+    }
+    /* .innerSearch_row .searchproperty_btn {
+        margin-top: 3px;
+    } */
+}
+@media (max-width: 991px) {
+    .has-search-map .bravo_wrap .bravo_header .header-right {
+        width: auto !important;
+        display: initial;
+    }
+    .map_layout_master.has-search-map {
+        height: inherit;
+    }
+    .available-stroge-calculation {
+        width: 100%;
+    }
+    .arrow-tabs .nav-tabs.three-tabs li a {
+        font-size: 16px;
+    }
+    .bravo_wrap .bravo_header .content .header-right .btn-primary {
+        min-width: inherit;
+    }
+    .bravo-reviews
+        .review-list
+        .review-item
+        .review-item-head
+        .media
+        .media-body
+        .media-heading {
+        font-size: 16px;
+    }
+    .bravo-reviews
+        .review-list
+        .review-item
+        .review-item-body
+        .review-star
+        li
+        .fa {
+        font-size: 20px;
+    }
+    .bravo-reviews .review-list .review-item .review-item-body .detail {
+        font-size: 15px;
+    }
+    .bravo_wrap .detail-page-search .bravo_form .border-right {
+        display: grid;
+        max-width: 50% !important;
+    }
+    .bravo-reviews .review-box {
+        padding: 30px 0px;
+    }
+    .bravo-reviews .review-box .review-sumary .item .label {
+        padding-left: 0px;
+    }
+    .bravo_wrap .bravo_detail_space .bravo_content .g-header {
+        display: inherit;
+    }
+    .bravo_wrap .bravo_detail_space .bravo_content .g-header .right {
+        margin: 20px 0px;
+    }
+    .bravo_wrap .bravo_detail_space .bravo_content .g-space-feature .item {
+        margin-bottom: 15px;
+    }
+    .bravo_wrap .bravo_header .content .header-right {
+        width: auto;
+        flex: none;
+    }
+    .bravo_wrap .bravo_header .content .header-right .btn {
+        display: none;
+    }
+    .bravo_wrap .bravo_header .content .header-left {
+        display: none;
+    }
+    .bravo-logo img {
+        max-width: 170px;
+    }
+    .bravo_wrap .bravo_header {
+        padding: 10px 0px;
+    }
+    .bravo_wrap .bravo_header .content .header-right .btn-primary {
+        padding: 0px 10px;
+        line-height: 42px;
+    }
+    .bravo_wrap .bravo_header .content .header-right .btn.btn-secondary {
+        padding: 0px 15px;
+    }
+    .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li a {
+        font-size: 15px;
+    }
+    .bravo_wrap .bravo_header .content .header-left .bravo-menu {
+        padding: 0px;
+    }
+
+    .bravo_wrap .bravo_form .smart-search .bravo-autocomplete {
+        left: 0px;
+    }
+    .bravo_wrap .bravo_form .form-group {
+        border-bottom-color: #e7eaed;
+    }
+    .bravo_wrap .page-template-content .bravo-form-search-all {
+        padding: 10px 0px 20px;
+        min-height: 300px;
+    }
+    .bravo_wrap #create_space .dungdt-upload-multiple .attach-demo .image-item {
+        width: 20% !important;
+    }
+    .bravo_wrap
+        #create_space
+        .dungdt-upload-multiple
+        .attach-demo
+        .image-item
+        .inner
+        img,
+    .bravo_wrap #create_space .dungdt-upload-multiple .attach-demo .image-item {
+        height: 120px !important;
+    }
+    .bravo_wrap .bravo_header .content .header-right .bravo-more-menu {
+        display: block;
+        font-size: 26px;
+    }
+    .home_header .content .header-right .bravo-more-menu i {
+        color: #fff;
+    }
+    .bravo_wrap .bravo_header .content {
+        justify-content: space-between;
+    }
+    .bravo_wrap .bravo_header .content .header-right .bravo-more-menu:focus {
+        outline: 0px;
+        background: #0b2239;
+    }
+    .bravo_wrap .bravo_header .bravo-menu-mobile.active {
+        left: 0;
+    }
+    .bravo-effect-bg,
+    .bravo-effect-user-bg {
+        z-index: 0;
+    }
+    .bravo_wrap .page-template-content .bravo-form-search-all .text-heading br {
+        display: none;
+    }
+    .searchInput input {
+        padding: 12px 30px;
+    }
+    .searchInput .btn {
+        right: 6px;
+        top: 6px;
+        width: 45px;
+        height: 45px;
+    }
+    .bravo_wrap .bravo_footer .main-footer .nav-footer .context ul li {
+        margin-right: 10px;
+    }
+    .footer-logo img {
+        width: 100%;
+        max-width: 150px;
+    }
+    .categoriesHome_sec .list-item .col {
+        width: 50%;
+        flex-basis: auto;
+    }
+    .become-host-sec {
+        padding: 50px 0;
+        background-position: 20%;
+    }
+    .become-host-sec:before {
+        width: 240px;
+        height: 374px;
+        display: none;
+    }
+    .become-host-sec .title br {
+        display: none;
+    }
+    .bravo_wrap .bravo_header .bravo-menu-mobile .user-profile .avatar {
+        background: #0b5959;
+    }
+    .bravo_wrap .bravo_header .bravo-menu-mobile .user-profile {
+        border: 0px;
+    }
+    .bravo_wrap .bravo_header .bravo-menu-mobile .user-profile ul li {
+        margin: 0px;
+    }
+    .bravo_wrap .bravo_header .bravo-menu-mobile .user-profile .avatar {
+        padding: 25px 0px;
+    }
+    .bravo_wrap .bravo_header .bravo-menu-mobile .user-profile ul li a {
+        display: block;
+        padding: 10px 20px;
+        border-bottom: 1px solid #f2f8fc;
+        font-weight: 500;
+    }
+    .bravo_wrap .bravo_header .bravo-menu-mobile .user-profile ul,
+    .bravo_wrap .bravo_header .bravo-menu-mobile .g-menu > ul {
+        padding: 0px;
+    }
+    .bravo_wrap .bravo_header .bravo-menu-mobile .g-menu > ul > li a {
+        padding: 10px 20px;
+        border-color: #f2f8fc;
+        font-weight: 500;
+    }
+    .bravo_wrap .bravo_header .bravo-menu-mobile .user-profile .b-close {
+        line-height: 50px;
+    }
+    .login-sign-pages .offset-1 {
+        margin-left: 0px;
+    }
+    .login-sign-pages .left-login-image-sec {
+        text-align: center;
+    }
+    .login-sign-pages .left-login-image-sec img {
+        margin-top: 0px;
+    }
+    .login-sign-pages .right-form-panel h3 {
+        text-align: center;
+    }
+    .bravo_wrap .bravo-contact-block .contact-info .info-content {
+        margin-top: 40px !important;
+    }
+    .bravo_wrap .bravo-contact-block .section {
+        padding: 30px 0px;
+    }
+    .bravo_wrap
+        .page-template-content
+        .bravo-form-search-all
+        .g-form-control
+        .nav-tabs {
+        width: 100%;
+    }
+    .bravo_wrap
+        .page-template-content
+        .bravo-form-search-all
+        .g-form-control
+        .tab-content {
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .rooms_available_top {
+        flex-direction: column;
+    }
+    .rooms_available_top .title_cus {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .cityList {
+        width: 100%;
+    }
+    .numberBlock .title_cus {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .numberBlock .cityList {
+        margin-bottom: 25px;
+    }
+    .whyus_section .order1 {
+        order: 1;
+    }
+    .whyus_section .order2 {
+        order: 2;
+    }
+    .whyus_section .bgimage {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 25px !important;
+    }
+    .whyus_section .rightabstract {
+        bottom: unset;
+        top: 220px;
+    }
+    .whyus_section .leftabstract {
+        bottom: unset;
+        top: 30px;
+    }
+    .padding50 {
+        padding: 30px 0px;
+    }
+    .bravo_wrap .bravo_header .content .header-right {
+        display: flex;
+    }
+    .authContent {
+        width: 100%;
+        margin-top: 25px;
+        min-height: 250px;
+    }
+    .authContent:after {
+        width: 93px;
+        height: 55px;
+    }
+    .form-group.w-35 {
+        width: 100%;
+    }
+    .accordionCustom .visit-new-add {
+        flex-direction: column;
+    }
+    .accordionCustom .click-tag p {
+        margin-bottom: 5px;
+    }
+    .afterownerRegistration {
+        display: none;
+    }
+    .property_owner .heroBanner.bannerafterLogin {
+        min-height: 300;
+    }
+    .bravo_wrap .bravo_header .bravo-menu-mobile .g-menu > ul > li a:hover {
+        border-color: #53d687;
+        color: #53d687 !important;
+    }
+    .bookingconfirm_tab .accordionCustom .visit-new-add figure {
+        margin: 20px 0px;
+        height: 100px;
+        max-width: 100px;
+    }
+    .accordionCustom .visit-new-add figure {
+        height: 100px;
+        max-width: 100px;
+    }
+    .bookingdetail_page .nav-pills li button {
+        margin-bottom: 10px;
+    }
+    .newProperty_for .selectAmenities {
+        margin-left: 15px;
+        margin-bottom: 0px !important;
+    }
+    .selectproperty_row .formCheck .checkmark {
+        margin-top: -7px;
+    }
+    .heroBanner .g-field-search .btn-minus i,
+    .heroBanner .g-field-search .btn-add i {
+        margin-top: 0px;
+    }
+    .bookingdetail_page .nav-pills li button:after {
+        top: unset;
+    }
+    .simplified .item {
+        margin-bottom: 30px;
+    }
+    .simplified .item:after {
+        display: none;
+    }
+    .simplified {
+        padding: 20px 0px;
+    }
+    .simplified_new .header-thumb {
+        width: 120px;
+        height: 120px;
+    }
+    .feedbackouter {
+        width: 75%;
+        margin: 0px auto;
+    }
+    .innerbanner.about-olerooms {
+        min-height: 300 !important;
+    }
+    .listing-back .filter-col {
+        display: none;
+    }
+    .listing-back .filter-col.open {
+        display: block;
+        position: absolute;
+        top: 200px;
+        z-index: 1;
+        background: #fff;
+        width: 92%;
+        box-shadow: 0px 10px 10px rgba(204, 204, 204, 0.6);
+        z-index: 10;
+    }
+    .listing-track .topbar-search .control .dropdown-menu a {
+        padding: 10px;
+    }
+    .listing-track .topbar-search {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        justify-content: end !important;
+        text-align: right;
+    }
+    .listing-back .filter-col .g-filter-item i {
+        color: #1a2b48 !important;
+    }
+    .mobileproperty_filter {
+        display: block;
+        margin-right: 10px;
+    }
+    .bravo-client-feedback .owl-nav {
+        width: 95% !important;
+    }
+    .customer_trust {
+        padding-bottom: 0px;
+    }
+    .search_properties_ grid-list .details-img {
+        width: 15px;
+    }
+    .search_properties_ grid-list .grid-location img {
+        width: 15px;
+    }
+    .searchproperty_btn {
+        padding: 6px 10px;
+    }
+    .list-btn.both-button a {
+        margin-right: 5px;
+        width: 100%;
+    }
+    .list-btn.both-button a button {
+        margin: 0px !important;
+        height: 100%;
+    }
+    .list-btn.both-button button {
+        width: 100%;
+        margin-left: 5px;
+    }
+    .bravo-pagination ul {
+        flex-wrap: unset;
+        max-width: 430px;
+        overflow: hidden;
+        justify-content: flex-start;
+        overflow-x: auto;
+        margin: 0px auto;
+    }
+    .bravo-pagination ul::-webkit-scrollbar {
+        height: 0;
+    }
+    .specialNotes {
+        margin-bottom: 20px;
+    }
+    .changebox span {
+        line-height: normal;
+    }
+    .bravo_wrap .page-template-content .bravo-form-search-all .text-heading {
+        overflow: hidden;
+        height: 60px;
+    }
+    .step_rightPanel .btnrow_progress .backStep {
+        order: 2;
+    }
+}
+@media (max-width: 767px) {
+    .detail-page-price-avail .manage-space-price-availa li span {
+        font-size: 16px;
+    }
+    .detail-page-price-avail .manage-space-price-availa li {
+        width: 50%;
+        margin: 10px 0px;
+    }
+    .add-space-checklist ul,
+    .add-space-radiolist ul {
+        display: inline-block;
+    }
+    .add-space-checklist ul li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .bravo_wrap .bravo_detail_space .bravo_content .g-overview ul li {
+        font-size: 15px;
+    }
+    .dropdown-notifications .dropdown-toolbar h3.dropdown-toolbar-title {
+        font-size: 15px;
+    }
+    .bravo_wrap
+        .bravo_topbar
+        .content
+        .topbar-items
+        li.dropdown-notifications
+        .dropdown-footer
+        a {
+        font-size: 14px;
+    }
+    .bravo_wrap .bravo_topbar .content .topbar-left {
+        display: none;
+    }
+    .bravo_wrap .bravo_topbar {
+        display: block;
+        padding: 7px 0px;
+    }
+    .bravo_wrap .bravo_topbar .content {
+        justify-content: flex-end;
+    }
+    .bravo_wrap
+        .bravo_topbar
+        .content
+        .topbar-items
+        li.login-item.dropdown:hover
+        .dropdown-menu {
+        top: 40% !important;
+    }
+    .bravo_wrap
+        .bravo_topbar
+        .content
+        .topbar-right
+        .dropdown-notifications
+        .dropdown-menu {
+        min-width: 250px !important;
+    }
+    .bravo-contact-block,
+    .login-sign-pages {
+        padding: 30px 0px;
+    }
+    .left-login-image-sec img {
+        max-width: 50%;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .bravo_wrap .bravo_header .content .header-right .login-web-btn {
+        display: none;
+    }
+    .bravo_wrap .bravo_header .content .header-right .bravo-more-menu i {
+        font-size: 24px;
+        vertical-align: middle;
+        display: table-cell;
+    }
+    .bravo_wrap .bravo_header .content .header-right .bravo-more-menu.active {
+        background: none;
+        color: #00233c;
+    }
+    .bravo_wrap .bravo_header .content .header-right .bravo-more-menu {
+        outline: none;
+    }
+    .bravo_wrap .bravo_header .bravo-menu-mobile {
+        border: 0px;
+    }
+    .bravo_wrap .page-template-content .bravo-form-search-all .text-heading {
+        font-size: 50px;
+    }
+    .bravo_wrap .page-template-content .bravo-form-search-all .sub-heading {
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .become-host-sec figure img {
+        max-width: 100%;
+    }
+    .bravo_wrap .bravo_footer .main-footer {
+        text-align: left;
+        padding: 0 10px;
+    }
+    .main-footer .nav-footer.text-right {
+        text-align: center !important;
+    }
+    .bravo_wrap .bravo_footer .copy-right .text-left {
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+    .bravo_wrap .bravo_footer .copy-right .text-right {
+        text-align: center !important;
+    }
+    .bravo_footer {
+        padding: 90px 0px 20px;
+    }
+    .copy-text-line,
+    .copy-right .social-footer.text-right {
+        text-align: center !important;
+    }
+    .bravo_wrap .bravo_footer .main-footer .nav-footer .context ul li a,
+    .context.footer-nav h5,
+    .bravo_wrap .bravo_footer .main-footer .nav-footer .context .contact {
+        margin-bottom: 15px;
+    }
+    .social-footer.text-right {
+        margin-top: 10px;
+    }
+    .dirt_banner {
+        min-height: 250px;
+    }
+    .static_page .title h2,
+    .title-60 h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .ab-img img {
+        width: 100%;
+    }
+    .about_content .title br {
+        display: none;
+    }
+    .how_it .order1 {
+        order: 1;
+    }
+    .how_it .order2 {
+        order: 2;
+    }
+    .how_it .about_content {
+        text-align: center;
+    }
+    .how_it .ab-img {
+        margin: 20px 0px;
+    }
+    .key_features .bravo-list-hotel .item-loop {
+        margin: 0px 20px 40px 20px;
+    }
+    .bravo_wrap
+        .page-template-content
+        .bravo-client-feedback
+        .list-item
+        .owl-item.center
+        .feedbackouter {
+        margin: 0px 30px 0px 30px;
+    }
+    .customer_trust.bravo-list-hotel .owl-dots.disabled,
+    .customer_trust.bravo-list-hotel .owl-dots {
+        margin-top: 30px;
+    }
+    .bannrContent p br {
+        display: none;
+    }
+    .property_owner .heroBanner:after,
+    .company_corporate .heroBanner:after {
+        width: 173px;
+    }
+    .property_owner .heroBanner .bannrContent h1,
+    .company_corporate .heroBanner .bannrContent h1 {
+        font-size: 33px;
+        line-height: 43px;
+    }
+    .heroBanner .customForm {
+        padding: 15px;
+    }
+    .property_owner
+        .page-template-content
+        .bravo-client-feedback
+        .list-item
+        .owl-item
+        .feedbackouter
+        .ratingRow,
+    .company_corporate
+        .page-template-content
+        .bravo-client-feedback
+        .list-item
+        .owl-item
+        .feedbackouter
+        .ratingRow {
+        display: block !important;
+    }
+    .formouterDesign {
+        padding: 15px;
+    }
+    .innerbanner h1 {
+        font-size: 28px;
+    }
+    .innerbanner .subheading {
+        font-size: 18px;
+    }
+    .succesStep {
+        display: block;
+        padding: 0px;
+    }
+    .succesStep .coverImage {
+        position: unset;
+        height: 300px;
+        width: 100%;
+    }
+    .succesContent {
+        padding: 20px 15px;
+    }
+    .succesContent h4 {
+        margin-top: 20px;
+    }
+    .succesContent span br {
+        display: none;
+    }
+    .title44 h2 {
+        font-size: 28px;
+    }
+    .static_content p {
+        font-size: 16px;
+    }
+    .mobileradio {
+        margin: 5px 0px 15px;
+    }
+    .booking_confirm figure img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .bookingBtn {
+        flex-direction: column;
+    }
+    .bookingBtn .btn {
+        margin-right: 0px !important;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .bookingBtn .profile-delete {
+        margin-bottom: 0px;
+    }
+    .booking-style .booking-cal {
+        display: block;
+        padding-right: 15px;
+    }
+    .form-group.select-icon.drop-booking {
+        margin-bottom: 15px !important;
+        padding-right: 0px !important;
+    }
+    #filter-with-daterange {
+        margin-top: 15px !important;
+    }
+    .addPropertybtn {
+        margin: 0px !important;
+        width: 100%;
+    }
+    .addPropertybtn a {
+        justify-content: center;
+    }
+    .daterangepicker.show-calendar .drp-buttons {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .bookingdetail_page .nav-pills {
+        flex-direction: column;
+    }
+    .bookingdetail_page .nav-pills li {
+        margin-bottom: 10px;
+    }
+    .bookingdetail_page .nav-pills li:last-child {
+        margin-right: 0px !important;
+    }
+    .bookingdetail_page .nav-pills li button {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+    .bookingdetail_page .nav-pills li:last-child button {
+        margin-bottom: 0px;
+    }
+    .bookingdetail_page .nav-pills li button:after {
+        right: unset;
+        bottom: -31px;
+        right: 0;
+        left: 0;
+        margin: 0px auto;
+        transform: rotate(91deg);
+    }
+    .bookingdetail_page .nav-pills li button:before {
+        right: 0;
+        left: 0;
+        margin: 0px auto;
+    }
+    .quantity__input {
+        margin-top: -2px;
+    }
+    .click-tag {
+        max-width: unset;
+        display: block;
+    }
+    .click-tag p {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 5px;
+        line-height: 21px;
+    }
+    a.details-accordin.vist-open {
+        padding: 10px;
+        padding-right: 40px;
+    }
+    .olddesign_accordien .details-accordin:after {
+        width: 30px;
+        height: 30px;
+        right: 10px;
+    }
+    .headImg {
+        margin-bottom: 20px;
+    }
+    #bookingPropertyDetails .mapSec {
+        margin: 10px 0px 20px;
+    }
+    .accordionCustom .card-header button {
+        padding: 10px;
+        padding-right: 65px;
+        text-align: left;
+        font-size: 15px;
+        height: 60px;
+    }
+    .accordionCustom .card-header button:before {
+        top: 10px;
+        right: 10px;
+    }
+    .visit-remove-icon {
+        font-size: 20px;
+        top: 50% !important;
+        right: 45px !important;
+        transform: translateY(-50%);
+    }
+    .mobileInline_6 {
+        display: flex;
+    }
+    .mobileView_dashdata .col {
+        padding: 0px;
+    }
+    .mobileView_dashdata .form-group.td-tag {
+        font-size: 14px;
+    }
+    .rooms_available {
+        padding-bottom: 10px;
+    }
+    .city-carousel .owl-item {
+        margin-right: 20px !important;
+    }
+    .city-carousel .item-loop {
+        margin-right: 0px !important;
+    }
+    .bravo_wrap .bravo-list-hotel.layout_carousel .city-carousel .owl-nav {
+        display: none !important;
+    }
+
+    .company_corporate .heroBanner {
+        min-height: 410px;
+    }
+    .company_corporate .feedbackouter {
+        margin: 0px 10px;
+    }
+    .feedbackouter {
+        margin: 10px 20px;
+    }
+    .feedbackouter .content_wrap {
+        padding-top: 0px;
+    }
+    .bravo_wrap .bravo_footer .main-footer .nav-footer .context .contact .sub {
+        margin-top: 3px !important;
+    }
+    .rightPanel_inner .breadcrumb-item + .breadcrumb-item::before {
+        background-position: 0 0px;
+    }
+    .cal-new {
+        padding: 10px;
+    }
+    .cal-new span {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .key_features .customNav {
+        display: none;
+    }
+    .key_fea_title {
+        justify-content: center !important;
+    }
+    .feedbackouter {
+        width: 90%;
+        margin: 0px auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .feedbackouter figure {
+        margin: 0px auto 20px;
+    }
+    .innerbanner.about-olerooms {
+        min-height: 200px !important;
+        background-size: 100% !important;
+    }
+    .numberBlock .cityBox figure {
+        width: 80px;
+        margin: 0px auto 10px;
+    }
+    .numberBlock .cityBox {
+        flex-direction: column;
+    }
+    .numberBlock .cityBox .contentwrap {
+        text-align: center !important;
+    }
+    .add_Slider .bravo-list-hotel .item-loop .thumb-image {
+        height: auto !important;
+    }
+    .selectproperty_row .selectAmenities {
+        height: 250px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .near-me {
+        font-size: 0px !important;
+    }
+    .near-me:before {
+        font-size: 15px !important;
+    }
+    .loading .near-me:before {
+        width: 24px;
+    }
+    #location {
+        padding-right: 38px;
+    }
+}
+@media (max-width: 580px) {
+    .arrow-tabs .nav-tabs.three-tabs > li {
+        width: 100%;
+    }
+    .arrow-tabs .nav-tabs.three-tabs li a {
+        border-bottom: 2px solid #0077c8;
+    }
+    .arrow-tabs .nav-tabs.three-tabs li:last-child a {
+        border-bottom: 0px;
+    }
+    .bravo_wrap #create_space .dungdt-upload-multiple .attach-demo .image-item {
+        width: 33.33% !important;
+    }
+    .dirt_report .btn_row {
+        display: block !important;
+    }
+    .dirt_report .btn_row .btn {
+        margin: 0px 0px 15px 0px !important;
+        width: 100% !important;
+    }
+    .auth_div {
+        max-width: 100%;
+    }
+    .supportDiv {
+        transform: unset;
+        border-radius: 0;
+        font-size: 0px;
+        height: 50px;
+        bottom: unset;
+        right: 0;
+        width: 50px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0px 2px 2px 0px #153f62;
+        top: 50%;
+    }
+    .supportDiv a {
+        width: 40px;
+        height: 40px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0px auto !important;
+        padding: 0px;
+        filter: brightness(0) invert(1);
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 496 496' style='enable-background:new 0 0 496 496;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M402.524,432l-18.52-55.568c-6.472-19.4-22.984-33.72-43.112-37.384l-53.464-9.728v-4.144 c9.304-5.4,17.4-12.624,23.848-21.176h16.152c13.232,0,24-10.768,24-24v-96c0-57.344-46.656-104-104-104s-104,46.656-104,104v56 c0,15.424,10.968,28.328,25.512,31.336c4.488,22.992,18.856,42.448,38.488,53.84v4.144l-53.472,9.728 c-20.12,3.664-36.64,17.984-43.104,37.384l-3.2,9.608l-27.248-27.248c-3.12-3.12-3.12-8.2,0-11.32l31.6-31.592l-59.312-59.312 L16.98,292.28c-10.576,10.576-16.4,24.64-16.4,39.6s5.824,29.016,16.4,39.592l108.12,108.12C135.676,490.168,149.74,496,164.7,496 c14.96,0,29.016-5.832,39.344-16.168l38.968-35.704L230.86,432H402.524z M335.428,280c0,4.416-3.592,8-8,8H320.7 c2.32-5.288,4.08-10.864,5.216-16.664c3.424-0.712,6.576-2.072,9.512-3.784V280z M327.428,253.776v-27.552 c4.76,2.776,8,7.88,8,13.776S332.188,251,327.428,253.776z M167.428,253.776c-4.76-2.776-8-7.88-8-13.776s3.24-11,8-13.776 V253.776z M167.428,200v9.136c-2.848,0.744-5.52,1.864-8,3.312V184c0-48.52,39.48-88,88-88s88,39.48,88,88v28.448 c-2.48-1.448-5.152-2.576-8-3.312V200h-8c-23.656,0-45.896-9.216-62.632-25.944l-9.368-9.368l-9.368,9.368 C221.324,190.784,199.084,200,175.428,200H167.428z M183.428,256v-40.304c24.024-1.808,46.424-11.72,64-28.432 c17.576,16.712,39.976,26.632,64,28.432V256c0,11.664-3.184,22.576-8.656,32h-55.344v16h42.192c-11.28,9.928-26.024,16-42.192,16 C212.14,320,183.428,291.288,183.428,256z M271.428,332.312v0.376l-24,24l-24-24v-0.376c7.584,2.384,15.64,3.688,24,3.688 S263.844,334.696,271.428,332.312z M126.02,381.488c4.616-13.856,16.416-24.088,30.792-26.712l55.92-10.16l34.696,34.696 l34.688-34.688l55.912,10.16c14.376,2.624,26.176,12.848,30.792,26.712L380.332,416H214.86l-31.16-31.16l-34.624,31.32 c-3.016,3.032-8.288,3.032-11.312,0l-17.472-17.472L126.02,381.488z M52.684,279.192l36.688,36.688l-8.688,8.688L43.996,287.88 L52.684,279.192z M192.964,468.296c-7.552,7.536-17.6,11.704-28.28,11.704c-10.68,0-20.728-4.168-28.288-11.72L28.276,360.168 c-7.552-7.552-11.712-17.6-11.712-28.28c0-10.688,4.16-20.736,11.712-28.288l4.4-4.4l36.688,36.688l-0.288,0.288 c-9.352,9.36-9.352,24.584,0,33.944l57.368,57.368c4.536,4.528,10.56,7.032,16.976,7.032s12.44-2.496,16.68-6.752l0.6-0.536 l36.856,36.856L192.964,468.296z M209.364,453.256l-36.776-36.776l10.568-9.552l36.712,36.712L209.364,453.256z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M471.428,0h-112c-13.232,0-24,10.768-24,24v64c0,13.232,10.768,24,24,24h21.368l-8.272,48.248l77.2-48.248h21.704 c13.232,0,24-10.768,24-24V24C495.428,10.768,484.66,0,471.428,0z M479.428,88c0,4.408-3.592,8-8,8h-26.296l-50.808,31.752 L399.772,96h-40.344c-4.408,0-8-3.592-8-8V24c0-4.408,3.592-8,8-8h112c4.408,0,8,3.592,8,8V88z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Crect x='367.428' y='32' width='96' height='16'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Crect x='367.428' y='64' width='64' height='16'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Crect x='447.428' y='64' width='16' height='16'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M247.428,24C142.9,24,52.86,96.304,29.452,197.16l-15.16-25.272l-13.72,8.232l28.12,46.856l46.856-28.12l-8.232-13.72 l-21.68,13.008C68.308,105.88,151.276,40,247.428,40c21.016,0,41.752,3.12,61.632,9.28L313.796,34 C292.38,27.36,270.052,24,247.428,24z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M491.54,177.136l-46.856-28.12l-28.112,46.864l13.72,8.232l14-23.336c7.368,21.56,11.136,44.112,11.136,67.224 c0,47.576-16.48,94.088-46.392,130.96l12.424,10.08c32.224-39.712,49.968-89.808,49.968-141.04 c0-24.472-3.944-48.368-11.632-71.248l23.512,14.104L491.54,177.136z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+    .supportDiv img {
+        max-width: 17px;
+        display: none;
+    }
+    .articalContent {
+        padding: 10px 20px 15px;
+    }
+    .myreview_box,
+    .staticList ul {
+        flex-direction: column;
+    }
+    .staticList ul li {
+        text-align: left;
+        text-align: left;
+        justify-content: start;
+    }
+    .staticList ul li:not(:last-child):after {
+        display: none;
+    }
+    .errorPage {
+        max-width: 330px;
+    }
+    .errorPage figure {
+        width: 100%;
+        height: 180px;
+    }
+    .step_rightPanel .btnrow_progress .d-flex {
+        flex-direction: column;
+    }
+    .step_rightPanel .btnrow_progress .d-flex .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .listing-track .list-btn button,
+    .listing-track .list-btn a {
+        width: 100%;
+    }
+    .detail-list-btn a,
+    .detail-list-btn button.list-visit {
+        width: 100%;
+    }
+    .listing-track .list-item {
+        padding: 15px !important;
+    }
+    .scrolling-words-container {
+        font-size: 30px;
+    }
+
+    /*new home serch design client confirm then we implement*/
+    .bravo_wrap
+        .page-template-content
+        .bravo-form-search-all
+        .g-form-control
+        .nav-tabs
+        li {
+        width: 50%;
+    }
+    .bravo_wrap
+        .page-template-content
+        .bravo-form-search-all
+        .g-form-control
+        .nav-tabs
+        li
+        a {
+        border: 1px solid rgba(235, 240, 244, 0.3);
+        border-radius: 4px;
+        margin: 0px 4px 5px;
+        text-align: center;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    .bravo_wrap .bravo_form {
+        border-radius: 8px;
+    }
+    .bravo_wrap
+        .page-template-content
+        .bravo-form-search-all
+        .g-form-control
+        .nav-tabs {
+        /* overflow: hidden;
+        overflow-x: auto;
+        display: flex;
+        flex-wrap: unset; */
+        justify-content: flex-start;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    /* .bravo_wrap
+        .page-template-content
+        .bravo-form-search-all
+        .g-form-control
+        .nav-tabs::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    } */
+    .bravo_wrap
+        .page-template-content
+        .bravo-form-search-all
+        .g-button-submit
+        button {
+        height: 50px;
+    }
+    .bravo_wrap .bravo_form .g-button-submit {
+        border-color: #e7eaed;
+    }
+    /*finish new home serch design client confirm then we implement*/
+}
+@media (max-width: 480px) {
+    .detail-page-price-avail .manage-space-price-availa li {
+        width: 100%;
+    }
+    .bravo_wrap #create_space .dungdt-upload-multiple .attach-demo .image-item {
+        width: 50% !important;
+    }
+    .detail-page-search .bravo_form {
+        padding: 10px 0px 20px 0px;
+    }
+    .bravo_wrap .detail-page-search .bravo_form .border-right {
+        max-width: 100% !important;
+    }
+    .bravo_wrap
+        .bravo_detail_space
+        .bravo_content
+        .g-space-feature
+        .item
+        .icon {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    .bravo_wrap .bravo_detail_space .bravo_content .g-space-feature .item {
+        padding: 10px 15px;
+    }
+    .bravo_wrap .page-template-content .bravo-form-search-all .text-heading {
+        font-size: 20px;
+    }
+    .bravo_wrap
+        .bravo_detail_space
+        .bravo_content
+        .g-space-feature
+        .item
+        .info
+        .name {
+        font-size: 16px;
+    }
+    .static_page .title span {
+        font-size: 16px;
+    }
+    .static_page,
+    .sec_pd {
+        padding: 30px 0px;
+    }
+    .uploadImages_block .pip,
+    .uploadImages_block .pip img,
+    .uploadfileBtn {
+        width: 60px;
+        height: 60px;
+    }
+    .uploadImages_block {
+        min-height: 92px;
+    }
+    .uploadfileBtn,
+    .uploadfileBtn i {
+        font-size: 10px;
+    }
+    .authTab li button {
+        min-width: 130px;
+    }
+    .modal .minw-184 {
+        min-width: 100px;
+    }
+    .profile-setup .logo.dashboard-user-img .avatar.avatar-cover img {
+        width: 70px;
+        height: 70px;
+    }
+    .logoUpload {
+        margin-left: 6px;
+        padding-left: 20px;
+    }
+    .logoUpload:after {
+        height: 60px;
+    }
+    .upload-btn-wrapper > button.btn {
+        bottom: -10px !important;
+        right: 17px !important;
+    }
+    .uploaded_pdfIcon,
+    .uploadFile_input input::-webkit-file-upload-button {
+        max-width: 40px;
+        height: 40px;
+        border-radius: 9px;
+    }
+    .uploaded_pdfIcon img {
+        width: 100%;
+        max-width: 19px;
+    }
+    .uploadFile_input input::-webkit-file-upload-button {
+        background-size: 40%;
+        background-position-y: 47%;
+    }
+    .uploadFile_input input:before {
+        display: none;
+    }
+    .uploadFile_input input {
+        line-height: unset;
+    }
+    .booking-flex-mobile {
+        margin-bottom: 0px !important;
+    }
+    .booking-flex-mobile .booking-cal {
+        flex-direction: column;
+    }
+    .booking-flex-mobile .mobile_inline {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .booking-flex-mobile .form-group.select-icon.drop-booking {
+        padding-right: 0px;
+    }
+    .booking-flex-mobile .mobile_inline .addPropertybtn {
+        width: 100%;
+    }
+    .booking-flex-mobile .mobile_inline .addPropertybtn a {
+        justify-content: center;
+    }
+    .profilebtnissue_solved button {
+        width: 100%;
+        margin: 0px !important;
+    }
+    .profilebtnissue_solved button:first-child {
+        margin-bottom: 20px !important;
+    }
+    .offerBox .contentWrap .d-flex.justify-content-between {
+        flex-direction: column;
+    }
+    .offerBox .contentWrap .d-flex.justify-content-between a.text-uppercase {
+        text-transform: capitalize !important;
+        margin: 15px 0 4px;
+        line-height: 0;
+        display: inline-block;
+    }
+  
+    .propertydetailbtnRow {
+        justify-content: center;
+        width: 100%;
+    }
+    .propertydetailbtnRow a,
+    .propertydetailbtnRow a button,
+    .propertydetailbtnRow button {
+        width: 100%;
+    }
+    .feature_property .list-btn {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .feature_property .list-btn button {
+        width: 100%;
+    }
+    .mycoupon_code {
+        font-size: 15px !important;
+    }
+    .feature_property .list-btn button:nth-child(2) {
+        margin: 10px 0px 0 !important;
+    }
+}
+
+@media print and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+    .payment_modal .btn_row {
+        margin: 0px 0 10px !important;
+    }
+}

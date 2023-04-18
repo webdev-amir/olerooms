@@ -1,0 +1,13 @@
+{
+    "name": "PropertyOwnerDashboard",
+    "alias": "propertyownerdashboard",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\PropertyOwnerDashboard\\Providers\\PropertyOwnerDashboardServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

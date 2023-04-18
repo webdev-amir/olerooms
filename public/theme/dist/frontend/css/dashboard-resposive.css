@@ -1,0 +1,374 @@
+@media (max-width: 1367px) {
+    /* .bravo_wrap .bravo_user_profile>.container-fluid>.row-eq-height>.col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+        padding-left: 30px;
+        padding-right: 30px;
+    } */
+    /* .bravo_wrap .bravo_user_profile>.container-fluid>.row-eq-height>.col-md-9 {
+        max-width: 75%;
+        flex: 0 0 75%;
+    } */
+    .bravo_wrap
+        .bravo_user_profile
+        .bravo-user-dashboard
+        .dashboard-price-info
+        .dashboard-item
+        .wrap-box
+        .number {
+        font-size: 30px;
+    }
+    .bravo-user-dashboard
+        .dashboard-price-info
+        .dashboard-item
+        .wrap-box
+        .desc {
+        font-size: 18px;
+    }
+    .bravo-user-dashboard
+        .dashboard-price-info
+        .dashboard-item
+        .wrap-box
+        span
+        i {
+        font-size: 30px;
+    }
+    .dashboard-logo-left img {
+        max-width: 160px;
+        width: 100%;
+    }
+}
+@media (max-width: 1280px) {
+    .book-request-lists {
+        flex-direction: column;
+    }
+    .mybookings-box-inner {
+        width: 100%;
+        padding: 0px;
+    }
+    .mybooking-request-amount {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 1023px) {
+    .sortby_row {
+        display: block;
+    }
+    .daterangepicker.single {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 990px) {
+    .top-book-request .right-book-price span {
+        font-size: 24px;
+    }
+    .top-book-request .right-book-price img {
+        max-width: 30px;
+    }
+    .bravo_wrap
+        .bravo_user_profile
+        > .container-fluid
+        > .row-eq-height
+        > .col-md-9 {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-left: 15px;
+    }
+    .user-form-settings .dropdown-notifications {
+        left: -55px;
+    }
+    .bravo_wrap .bravo_user_profile .bravo-more-menu-user {
+        top: -10px;
+    }
+    .bravo-user-dashboard .dashboard-price-info .col-lg-3 {
+        margin-bottom: 15px;
+    }
+    .bravo_wrap .bravo_user_profile .user-form-settings {
+        padding: 20px 0px;
+    }
+    .user-profile-list-data .user-profile-view-text span {
+        font-size: 16px;
+    }
+    .user-profile-list-data .user-profile-view-text label {
+        font-size: 14px;
+    }
+    .bravo_wrap .bravo-list-item .topbar-search .control {
+        flex: unset !important;
+    }
+    .searchInput {
+        width: 100%;
+        max-width: 100%;
+    }
+    .bravo_wrap
+        .bravo_user_profile
+        > .container-fluid
+        > .row-eq-height
+        > .col-md-3 {
+        z-index: 99;
+    }
+    .dash_header.profile-section {
+        width: 85%;
+    }
+    .top-menu .profile-img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .booking-requests-page .book-request-lists .left-bottom-booking-request {
+        width: 100%;
+    }
+    .booking-requests-page .book-request-lists .left-bottom-booking-request a {
+        margin: 10px 0px;
+    }
+    .booking-requests-page .right-bottom-status-request {
+        position: inherit;
+        top: inherit;
+        right: inherit;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .booking-requests-page .book-request-lists .center-book-request ul li {
+        width: 100%;
+        padding: 0px;
+        border: 0px;
+    }
+    .booking-requests-page .light-tabs {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .booking-requests-page .light-tabs li {
+        width: 100%;
+    }
+    .booking-requests-page .light-tabs li a {
+        text-align: center;
+    }
+    .bravo_wrap .bravo_user_profile .btn {
+        /* // width: 100%; */
+        margin-bottom: 10px;
+    }
+    .top-book-request .left-img-panel .top-book-request-title span {
+        font-size: 14px;
+    }
+    .active-requests .center-book-request ul li:last-child {
+        width: 100%;
+    }
+    .book-request-lists {
+        padding: 15px;
+        position: relative;
+    }
+    .top-book-request .left-img-panel .top-book-request-title {
+        padding: 0px;
+        width: 100%;
+    }
+    .top-book-request .left-img-panel .top-book-request-title span i {
+        display: none;
+    }
+    .mybookings-box-inner .center-book-request ul li .sale-price {
+        display: block;
+    }
+    .book-request-lists .center-book-request ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bottom-book-request {
+        flex-direction: column;
+    }
+    .active-book-thumbs {
+        width: 100%;
+    }
+    .right-bottom-status-request {
+        width: 100%;
+        margin: 15px 0px;
+    }
+    .active-book-thumbs ul li a {
+        width: 40px;
+        height: 40px;
+    }
+    .right-bottom-status-request span {
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+    .right-bottom-status-request {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: auto;
+    }
+    .book-request-lists .center-book-request ul li {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .top-book-request .left-img-panel .top-book-request-title span,
+    .top-book-request .left-img-panel h3,
+    .mybooking-request-amount table caption,
+    .mybooking-request-reviews h3,
+    .mybooking-request-reviews strong {
+        font-size: 16px;
+    }
+    .book-request-lists .center-book-request ul li i {
+        font-size: 20px;
+    }
+    .mybooking-request-amount table,
+    .mybooking-request-reviews {
+        padding: 15px 20px;
+    }
+    .mybooking-request-amount.active a i:before,
+    .mybooking-request-reviews.active .responsive-arrow-view i:before {
+        content: "\EA78";
+    }
+    .mybooking-request-amount table tr {
+        margin-top: 10px;
+        padding-bottom: 0px;
+    }
+    .mybooking-request-amount table caption {
+        display: inline-block;
+        padding-bottom: 0px;
+    }
+    .mybooking-request-amount tbody,
+    .booking-review-box-content {
+        display: none;
+    }
+    .mybooking-request-amount a,
+    .mybooking-request-reviews .responsive-arrow-view {
+        display: block;
+    }
+    .mybookings-box-inner .center-book-request ul li {
+        width: 100%;
+        padding-left: 0px;
+        border: 0px;
+    }
+    .mybookings-box-inner .center-book-request ul li {
+        padding: 0px;
+        width: 50%;
+    }
+    .top-book-request .left-img-panel h3 {
+        margin-top: 15px;
+    }
+    .manage-space-item-right {
+        padding: 15px;
+    }
+    .bravo_wrap
+        .bravo_user_profile
+        .bravo-list-item
+        .list-item
+        .item-list
+        .control-action {
+        left: 0px;
+        padding: 0px 15px;
+        margin: 10px 0px 10px 0px;
+    }
+    .custom-model .modal-dialog {
+        max-width: 100%;
+        padding: 0px 15px;
+    }
+    .custom-model .modal-content .modal-header p {
+        font-size: 18px;
+    }
+    .custom-model .modal-content .modal-body,
+    .custom-model .modal-content .modal-header,
+    .custom-model .modal-content .modal-footer {
+        padding: 0px 15px;
+    }
+    .custom-model .modal-content .modal-header {
+        padding-top: 40px;
+    }
+    .custom-model .modal-content .modal-footer button {
+        width: 100%;
+    }
+    .custom-model .modal-content .modal-header .model-icon {
+        width: 100px;
+        height: 100px;
+        font-size: 34px;
+    }
+    .bravo_wrap .bravo_user_profile .user-form-settings .title-bar {
+        font-size: 1.4rem;
+    }
+    .user-form-settings .dropdown-notifications a i {
+        font-size: 24px;
+    }
+    .user-form-settings .dropdown-notifications a .notification-icon {
+        height: 20px !important;
+        font-size: 12px !important;
+        width: 20px !important;
+        line-height: 16px;
+    }
+    .bravo_wrap
+        .bravo_user_profile
+        .user-form-settings
+        .breadcrumb-page-bar
+        .page-breadcrumb
+        > li {
+        font-size: 14px;
+    }
+    .bravo_wrap
+        .bravo_user_profile
+        .user-form-settings
+        .breadcrumb-page-bar
+        .page-breadcrumb {
+        width: 100%;
+        padding-right: 90px;
+    }
+    .user-form-settings .dropdown-notifications {
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        left: inherit;
+    }
+    .bravo_wrap .bravo_user_profile .bravo-more-menu-user {
+        top: 0px;
+    }
+    .bravo_wrap .bravo_user_profile .user-form-settings .title-bar {
+        display: inline-block;
+        width: 100%;
+    }
+    .user-profile-lists ul li {
+        width: 100%;
+    }
+    .bravo_wrap
+        .bravo_user_profile
+        > .container-fluid
+        > .row-eq-height
+        > .col-md-3 {
+        flex: inherit;
+        max-width: 300px;
+        width: 300px;
+    }
+    .title-bar span {
+        display: block;
+    }
+    .bravo_wrap
+        .bravo_user_profile
+        .user-form-settings
+        .title-bar
+        .btn-change-password {
+        margin-top: 15px;
+        top: inherit;
+        display: inline-block;
+    }
+}
+@media (max-width: 480px) {
+    .top-book-request .right-book-price span {
+        font-size: 20px;
+    }
+    .top-book-request .right-book-price img {
+        max-width: 24px;
+    }
+    .change-password-btns button {
+        width: 100%;
+    }
+    .upload_imgBox.multiimg figure {
+        width: 60px;
+        height: 60px;
+        margin-right: 9px;
+    }
+    .upload_imgBox.multiimg figure img {
+        width: 100%;
+        max-width: 20px;
+    }
+    .upload_imgBox {
+        height: auto;
+    }
+}

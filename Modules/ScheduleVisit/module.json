@@ -1,0 +1,13 @@
+{
+    "name": "ScheduleVisit",
+    "alias": "schedulevisit",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ScheduleVisit\\Providers\\ScheduleVisitServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "TrustedCustomers",
+    "alias": "trustedcustomers",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\TrustedCustomers\\Providers\\TrustedCustomersServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

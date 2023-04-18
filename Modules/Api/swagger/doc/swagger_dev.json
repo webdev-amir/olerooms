@@ -1,0 +1,2157 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Olerooms App",
+        "version": "1.0.0",
+        "title": "Olerooms App",
+        "termsOfService": "",
+        "contact": {
+            "email": "olerroms@yopmail.com"
+        }
+    },
+    "host": "192.168.0.207/olerooms/",
+    "tags": [
+        {
+            "name": "Auth",
+            "description": "APIs related to Login and Sign Up processes"
+        },
+        {
+            "name": "Common Data",
+            "description": "APIs related to acommon data"
+        },
+        {
+            "name": "Customer Profile",
+            "description": "APIs related to auth customer Profile"
+        },
+        {
+            "name": "Property",
+            "description": "APIs related to customer property"
+        },
+        {
+            "name": "CMSPages",
+            "description": "APIs related to CMS pages"
+        },
+        {
+            "name": "PushNotifications",
+            "description": "APIs related to Push Notifications"
+        },
+    ],
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/api/customer-register": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Customer Registration for OTP.",
+                "description": "",
+                "operationId": "customer-register",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Registration"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/customer-login": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Customer Login.",
+                "description": "",
+                "operationId": "customer-login",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Login"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/forgot-password": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Forgot Password.",
+                "description": "",
+                "operationId": "forgot-password",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/ForgotPassword"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/customer-logout": {
+            "get": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Customer Logout",
+                "description": "",
+                "operationId": "customerLogout",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/get-state": {
+            "post": {
+                "tags": [
+                    "Homepage"
+                ],
+                "summary": "state list",
+                "description": "",
+                "operationId": "stateList",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/get-city": {
+            "post": {
+                "tags": [
+                    "Homepage"
+                ],
+                "summary": "city list",
+                "description": "",
+                "operationId": "CityList",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/CityList"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/get-location": {
+            "post": {
+                "tags": [
+                    "Homepage"
+                ],
+                "summary": "location list",
+                "description": "",
+                "operationId": "LocationList",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/LocationList"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/get-profile-form-data": {
+            "get": {
+                "tags": [
+                    "Common Data"
+                ],
+                "summary": "Get Static Pages Urls",
+                "description": "",
+                "operationId": "ProfilleFormDatas",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/customer-profile-details": {
+            "get": {
+                "tags": [
+                    "Customer Profile"
+                ],
+                "summary": "Get Customer Profile Details",
+                "description": "",
+                "operationId": "customerProfile",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/signed-url": {
+            "post": {
+                "tags": [
+                    "Customer Profile"
+                ],
+                "summary": "Profile Signed Url For Image",
+                "description": "",
+                "operationId": "userProfileSignedUrl",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/customer-profile-update": {
+            "post": {
+                "tags": [
+                    "Customer Profile"
+                ],
+                "summary": "customer profile update",
+                "description": "",
+                "operationId": "CustomerUserUpdate",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/CustomerUserUpdate"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/customer-mobile-update": {
+            "post": {
+                "tags": [
+                    "Customer Profile"
+                ],
+                "summary": "customer Mobile update",
+                "description": "",
+                "operationId": "CustomerMobileUpdate",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/CustomerMobileUpdate"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/get-homepage-data": {
+            "post": {
+                "tags": [
+                    "Homepage"
+                ],
+                "summary": "Get Homepage records",
+                "description": "",
+                "operationId": "homepageData",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/IsGguest"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        }, 
+        "/api/my-wishlist": {
+            "post": {
+                "tags": [
+                    "Customer Profile"
+                ],
+                "summary": "customer wishlist",
+                "description": "",
+                "operationId": "customerWishList",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/property-detail": {
+            "post": {
+                "tags": [
+                    "Customer Profile"
+                ],
+                "summary": "Property Detail",
+                "description": "",
+                "operationId": "PropertyDetail",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                     {
+                        "$ref": "#/parameters/IsGguest"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/PropertyDetail"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/get-booking-list": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "booking list",
+                "description": "",
+                "operationId": "getBookingList",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                     
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/booking-property-detail": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "booking property detail",
+                "description": "",
+                "operationId": "bookingPropertyDetail",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/bookingPropertyDetail"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/visit-property-detail": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "detail of visited property",
+                "description": "",
+                "operationId": "visitPropertyDetail",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/visitPropertyDetail"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+      "/api/cancel-booking": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "cancel booking",
+                "description": "",
+                "operationId": "cancelBooking",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/cancelBooking"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/my-visits": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "list of visited property",
+                "description": "",
+                "operationId": "myVisits",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/myVisits"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/delete-booking": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "list of visited property",
+                "description": "",
+                "operationId": "deleteBooking",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/deleteBooking"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/get-booking-details": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "for booking page detail",
+                "description": "",
+                "operationId": "getBookingDetails",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/getBookingDetails"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+
+        "/api/add-booking": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "to add booking",
+                "description": "",
+                "operationId": "addBooking",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/addBooking"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/review-booking": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "add review and rating for booking properties",
+                "description": "",
+                "operationId": "reviewBooking",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/reviewBooking"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/add-favorite": {
+            "post": {
+                "tags": [
+                    "Customer Profile"
+                ],
+                "summary": "Property Favorite Unfavorite",
+                "description": "",
+                "operationId": "PropertyAddFavorite",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/PropertyAddFavorite"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/apply-coupon": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "For Apply Coupon",
+                "description": "",
+                "operationId": "applyCoupon",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/applyCoupon"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/get-order-id": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "Get Order Id",
+                "description": "",
+                "operationId": "getOrderId",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/getOrderId"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/get-schedule-property": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "schedule property list",
+                "description": "",
+                "operationId": "schedulePropertyList",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/schedulePropertyList"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/delete-schedule-property": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "delete schedule property",
+                "description": "",
+                "operationId": "deleteScheduleProperty",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/deleteScheduleProperty"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/change-password": {
+            "post": {
+                "tags": [
+                    "Customer Profile"
+                ],
+                "summary": "Change Customer Password",
+                "description": "",
+                "operationId": "customerChangePassword",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/customerChangePassword"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/property-review-listing": {
+            "post": {
+                "tags": [
+                    "Customer Profile"
+                ],
+                "summary": "Property Review Listing",
+                "description": "",
+                "operationId": "propertyReviewListing",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/IsGguest"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/propertyReviewListing"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/add-property-schedule": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "Property Schedule",
+                "description": "",
+                "operationId": "propertySchedule",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/propertySchedule"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/search-property": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "Property Search",
+                "description": "",
+                "operationId": "SearchProperty",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    
+                    
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/SearchProperty"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/search-property-filter": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "Property Search Filter",
+                "description": "",
+                "operationId": "SearchPropertyFilter",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/SearchPropertyFilter"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/get-stati-pages-urls": {
+            "get": {
+                "tags": [
+                    "CMSPages"
+                ],
+                "summary": "Get Static Pages Urls",
+                "description": "",
+                "operationId": "PageUrls",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/notification-list": {
+            "post": {
+                "tags": [
+                    "PushNotifications"
+                ],
+                "summary": "get notification list",
+                "description": "",
+                "operationId": "NotificationList",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/cancel-schedule-visit": {
+            "post": {
+                "tags": [
+                    "Property"
+                ],
+                "summary": "cancel schedulevisit",
+                "description": "",
+                "operationId": "cancelScheduleMyVisit",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/Platform"
+                    },
+                    {
+                        "$ref": "#/parameters/Version"
+                    },
+                    {
+                        "$ref": "#/parameters/HeaderAuth"
+                    },
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/cancelScheduleMyVisit"
+                        }
+                    }
+                ],
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+    },
+    "definitions": {
+        "Registration": {
+            "type": "object",
+            "required": [
+                "name",
+                "email",
+                "phone",
+                "password",
+                "password_confirmation",
+                "isotp",
+                "otp"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "example": "John Duo",
+                    "description": "Name of user"
+                },
+                "email": {
+                    "type": "string",
+                    "example": "testuser@yopmail.com",
+                    "description": "Email of user"
+                },
+                "phone": {
+                    "type": "string",
+                    "example": "8209990522",
+                    "description": "Phone of user"
+                },
+                "password": {
+                    "type": "string",
+                    "example": "12345678",
+                    "description": "Password of user"
+                },
+                "password_confirmation": {
+                    "type": "string",
+                    "example": "12345678",
+                    "description": "Password confirm"
+                },
+                "device_token": {
+                    "type": "string",
+                    "example": "",
+                    "description": "Device token"
+                },
+                "isotp": {
+                    "type": "number",
+                    "example": "1",
+                    "description": "isotp for check otp verify"
+                },
+                "otp": {
+                    "type": "number",
+                    "example": "1234",
+                    "description": "otp on getting on email"
+                }
+            },
+            "xml": {
+                "name": "Registration"
+            }
+        }, 
+        "Login": {
+            "type": "object",
+            "required": [
+                "email",
+                "password",
+                "type",
+                "is_otp",
+                "otp"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "example": "mobile",
+                    "description": "Mobile or email"
+                },
+                "email": {
+                    "type": "string",
+                    "example": "testuser@yopmail.com",
+                    "description": "Email of user"
+                },
+                "password": {
+                    "type": "string",
+                    "example": "12345678",
+                    "description": "Password of user"
+                },
+                "phone": {
+                    "type": "string",
+                    "example": "8209990522",
+                    "description": "Phone of user"
+                },
+                "isotp": {
+                    "type": "string",
+                    "example": "0",
+                    "description": "send if we verify otp for mobile number only 1 or 0"
+                },
+                "otp": {
+                    "type": "string",
+                    "example": "1234",
+                    "description": "Otp use for mobile number only"
+                },
+            },
+            "xml": {
+                "name": "Login"
+            }
+        },
+        "ForgotPassword": {
+            "type": "object",
+            "required": [
+                "email"
+            ],
+            "properties": {
+                "email": {
+                    "type": "string",
+                    "example": "testuser@yopmail.com",
+                    "description": "Email of user"
+                }
+            },
+            "xml": {
+                "name": "Login"
+            }
+        },
+       "customerChangePassword": {
+            "type": "object",
+            "required": [
+                "old_password",
+                "new_password",
+                "new_password_confirmation",
+                ],
+            "properties": {
+                "old_password": {
+                    "type": "password",
+                    "example": "1234",
+                    "description": "User old Password"
+                },
+                "new_password": {
+                    "type": "password",
+                    "example": "12345",
+                    "description": "User new Password"
+                },
+                "new_password_confirmation": {
+                    "type": "password",
+                    "example": "12345",
+                    "description": "User new Confirm Password"
+                },
+            },
+            "xml": {
+                "name": "customerChangePassword"
+            }
+        },
+        "CustomerUserUpdate": {
+            "type": "object",
+            "required": [
+                "name",
+                "email",
+                "dob",
+                "image"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "example": "Nirbhay Dhaked",
+                    "description": "Name of user"
+                },
+                "email": {
+                    "type": "string",
+                    "example": "xyz@yopmail.com",
+                    "description": "Customer Email"
+                },
+                "dob": {
+                    "type": "string",
+                    "example": "2022-07-25",
+                    "description": "Customer Date Of Birth"
+                },
+                "image": {
+                    "type": "string",
+                    "example": "noimage.jpg",
+                    "description": "Customer Profile Image"
+                },
+                "city": {
+                    "type": "number",
+                    "example": "3378",
+                    "description": "Customer City"
+                }
+            },
+            "xml": {
+                "name": "CustomerUserUpdate"
+            }
+        },
+        "CustomerMobileUpdate": {
+            "type": "object",
+            "required": [
+                "phone",
+            ],
+            "properties": {
+                "phone": {
+                    "type": "number",
+                    "example": "9269968965",
+                    "description": "Phone number of user"
+                },
+            },
+            "xml": {
+                "name": "CustomerMobileUpdate"
+            }
+        },
+        "PropertyDetail": {
+            "type": "object",
+            "required": [
+                "property_id",
+                ],
+            "properties": {
+                "property_id": {
+                    "type": "number",
+                    "example": "191",
+                }
+            },
+            "xml": {
+                "name": "PropertyDetail"
+            }
+        },
+        
+        "PropertyAddFavorite": {
+            "type": "object",
+            "required": [
+                "property_id",
+                "is_favorite",
+                ],
+            "properties": {
+                "property_id": {
+                    "type": "number",
+                },
+                "is_favorite": {
+                    "type": "number",
+                }
+            },
+            "xml": {
+                "name": "PropertyAddFavorite"
+            }
+        },
+          "myVisits": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "example": "cancel",
+                },
+            },
+            "xml": {
+                "name": "myVisits"
+            }
+        },
+        "deleteBooking": {
+            "type": "object",
+            "required": [
+                "booking_id",
+                "property_id"
+                ],
+            "properties": {
+                "booking_id": {
+                    "type": "number",
+                    "example": "20",
+                },
+                "property_id": {
+                    "type": "number",
+                    "example": "2",
+                },
+            },
+            "xml": {
+                "name": "deleteBooking"
+            }
+        },
+        "addBooking": {
+            "type": "object",
+            "required": [
+                "phone",
+                "email",
+                "name",
+                "amount",
+                "check_in_date",
+                "per_room_amount",
+                "property_slug",
+                "property_type_slug",
+                "is_checkout_date",
+                "is_guest_type",
+                "is_occupancy_type",
+                "is_discount_applied",
+                ],
+            "properties": {
+                "phone": {
+                    "type": "number",
+                    "example": "9874563212",
+                },
+                "email": {
+                    "type": "email",
+                    "example": "test33ole@yopmail.com",
+                },
+                "name": {
+                    "type": "text",
+                    "example": "Test User",
+                },
+                "amount": {
+                    "type": "number",
+                    "example": "84000",
+                },
+                "check_in_date": {
+                    "type": "date",
+                    "example": "2022-11-10",
+                },
+                "per_room_amount": {
+                    "type": "number",
+                    "example": "6000",
+                }, 
+                "property_slug": {
+                    "type": "text",
+                    "example": "b5daf5b2fe12c94d6c1676d82e12e726",
+                }, 
+                "property_type_slug": {
+                    "type": "text",
+                    "example": "guest-hotel",
+                }, 
+                "is_checkout_date": {
+                    "type": "boolean",
+                    "example": "true",
+                }, 
+                "is_guest_type": {
+                    "type": "boolean",
+                    "example": "1",
+                },
+                "is_occupancy_type": {
+                    "type": "boolean",
+                    "example": "1",
+                },
+                "is_discount_applied": {
+                    "type": "boolean",
+                    "example": "false",
+                },
+            },
+            "xml": {
+                "name": "deleteBooking"
+            }
+        },
+         "reviewBooking": {
+            "type": "object",
+            "required": [
+                "rate_number",
+                "content",
+                 "booking_id",
+                "object_id"
+                ],
+            "properties": {
+                "rate_number": {
+                    "type": "number",
+                    "example": "2",
+                },
+                "content": {
+                    "type": "string",
+                    "example": "review content",
+                },
+                "booking_id": {
+                    "type": "number",
+                    "example": "168",
+                },
+                "object_id": {
+                    "type": "string",
+                    "example": "147",
+                },
+            },
+            "xml": {
+                "name": "reviewBooking"
+            }
+        },
+        "schedulePropertyList": {
+            "type": "object",
+            "required": [
+                "schedule_slug",
+                
+                ],
+            "properties": {
+                "schedule_slug": {
+                    "type": "string",
+                     "example": "686b260c335af63cdaae1ef1be0b7206",
+                }
+                
+            },
+            "xml": {
+                "name": "schedulePropertyList"
+            }
+        },
+       
+         "bookingPropertyDetail": {
+            "type": "object",
+            "required": [
+                "booking_slug",
+                
+                ],
+            "properties": {
+                "booking_slug": {
+                    "type": "string",
+                     "example": "19845f68b18ef81d6d45320cb7d51290",
+                }
+                
+            },
+            "xml": {
+                "name": "bookingPropertyDetail"
+            }
+        },
+        "deleteScheduleProperty": {
+            "type": "object",
+            "required": [
+                "visit_id",
+                "property_id",
+                
+                ],
+            "properties": {
+                "visit_id": {
+                    "type": "number",
+                     "example": 152,
+                },
+                "property_id": {
+                    "type": "number",
+                     "example": 169,
+                }
+                
+            },
+            "xml": {
+                "name": "deleteScheduleProperty"
+            }
+        },
+        "visitPropertyDetail": {
+            "type": "object",
+            "required": [
+                "schedule_id",
+            ],
+            "properties": {
+                "schedule_id": {
+                    "type": "number",
+                     "example": 99,
+                }
+            },
+            "xml": {
+                "name": "visitPropertyDetail"
+            }
+        },
+        "getBookingDetails": {
+            "type": "object",
+            "required": [
+                "property_slug",
+            ],
+            "properties": {
+                "property_slug": {
+                    "type": "string",
+                     "example": "7aa72924b7208a11b404ec09b78da3b4",
+                },
+            },
+            "xml": {
+                "name": "getBookingDetails"
+            }
+        },
+        
+        "cancelBooking": {
+            "type": "object",
+            "required": [
+                "booking_code",
+                "cancel_reason"
+            ],
+            "properties": {
+                "booking_code": {
+                    "type": "string",
+                     "example": "OLE0161"
+                },
+                "cancel_reason": {
+                    "type": "string",
+                     "example": "test reason"
+                }
+            },
+            "xml": {
+                "name": "cancelBooking"
+            }
+        },
+
+        "cancelScheduleMyVisit": {
+            "type": "object",
+            "required": [
+                "schedule_code",
+            ],
+            "properties": {
+                "schedule_code": {
+                    "type": "string",
+                     "example": "SCV0185",
+                }
+            },
+            "xml": {
+                "name": "cancelScheduleMyVisit"
+            }
+        },
+
+         "propertySchedule": {
+            "type": "object",
+            "required": [
+               "customer_name",
+                "customer_email",
+                "property_id",
+                "date",
+                "time"
+                ],
+            "properties": {
+                "customer_name": {
+                    "type": "string",
+                    "example": " devid Dhaked",
+                    "description": "User name"
+                },
+                "customer_email": {
+                    "type": "email",
+                    "example": "tanu1@yopmail.com",
+                    "description": "User email"
+                },
+                "property_id": {
+                    "type": "number",
+                    "example": "178",
+                    "description": "Property id"
+                },
+                "date": {
+                    "type": "date",
+                    "example": "2022-10-20",
+                    "description": "schedule date"
+                },
+                "time": {
+                    "type": "time",
+                    "example": "05:00 AM",
+                    "description": "schedule time"
+                }
+            },
+            "xml": {
+                "name": "propertySchedule"
+            }
+        },
+        "CityList": {
+            "type": "object",
+            "required": [
+                "state_id",
+                ],
+            "properties": {
+                "state_id": {
+                    "type": "number",
+                },
+            },
+            "xml": {
+                "name": "CityList"
+            }
+        },
+        "LocationList": {
+            "type": "object",
+            "required": [
+                "city_id",
+                ],
+            "properties": {
+                "city_id": {
+                    "type": "number",
+                },
+            },
+            "xml": {
+                "name": "LocationList"
+            }
+        },
+        "applyCoupon": {
+            "type": "object",
+            "required": [
+                "property_slug",
+                "offer_code",
+                "amount"
+            ],
+            "properties": {
+                "property_slug": {
+                    "type": "string",
+                    "example": "7aa72924b7208a11b404ec09b78da3b4",
+                },
+                "offer_code": {
+                    "type": "string",
+                    "example": "TESTING112",
+                },
+                "amount": {
+                    "type": "number",
+                    "example": "13000",
+                },
+            },
+            "xml": {
+                "name": "applyCoupon"
+            }
+        },
+        
+        "getOrderId": {
+            "type": "object",
+            "required": [
+                "property_slug",
+                "offer_code",
+                "amount"
+            ],
+            "properties": {
+                "request_id": {
+                    "type": "request_id",
+                    "example": "7aa72924b7208a11b404ec09b78da3b4",
+                },
+                "bookingtype": {
+                    "type": "string",
+                    "example": "Booking",
+                },
+                "amount": {
+                    "type": "number",
+                    "example": "13000",
+                },
+            },
+            "xml": {
+                "name": "getOrderId"
+            }
+        },
+        "SearchProperty": {
+            "type": "object",
+            "properties": {
+                "searchKey": {
+                    "type": "string",
+                    "example": "ashok",
+                    "description": "address or property id"
+                },
+                "property_type": {
+                    "type": "string",
+                    "example": "1",
+                    "description": "search according to property type"
+                },
+                "city_id": {
+                    "type": "integer",
+                    "example": "3378",
+                    "description": "search according to city id"
+                },
+                "state_id": {
+                    "type": "integer",
+                    "example": "33",
+                    "description": "search according to state id"
+                },
+                "available_for": {
+                    "type": "string",
+                    "example": "onlygirls",
+                    "description": "search according to property available for"
+                },
+                "price_range": {
+                    "type": "string",
+                    "example": "2000-5000",
+                    "description": "search according to property price range"
+                },
+                "occupancy_type": {
+                    "type": "string",
+                    "example": "single",
+                    "description": "search according to property occupancy type"
+                },
+                "room_ac_type": {
+                    "type": "string",
+                    "example": "ac",
+                    "description": "search according to room ac type"
+                },
+                "orderby": {
+                    "type": "string",
+                    "example": "a-to-z",
+                    "description": "sort according to order by"
+                },
+                
+                
+            },
+            "xml": {
+                "name": "SearchProperty"
+            }
+        },
+         "SearchPropertyFilter": {
+            "type": "object",
+            "properties": {
+                "property_type": {
+                    "type": "string",
+                    "example": "1",
+                    "description": "search according to property type"
+                },
+            },
+            "xml": {
+                "name": "SearchProperty"
+            }
+        },
+        "propertyReviewListing": {
+            "type": "object",
+            "required": [
+                "property_id",
+            ],
+            "properties": {
+                "property_id": {
+                    "type": "number",
+                }
+            },
+            "xml": {
+                "name": "propertyReviewListing"
+            }
+        }
+    },
+    "parameters": {
+        "Platform": {
+            "name": "Platform",
+            "in": "header",
+            "description": "operating-system - ios/android",
+            "default": "android",
+            "required": true,
+            "type": "string"
+        },
+        "Version": {
+            "name": "Version",
+            "in": "header",
+            "description": "Device Version",
+            "required": true,
+            "default": "1.0.0",
+            "type": "string"
+        },
+        "IsGguest": {
+            "name": "IsGguest",
+            "in": "header",
+            "description": "Guest User",
+            "required": true,
+            "type": "boolean"
+        },
+        "HeaderAuth": {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Authorization token of user from the login api response",
+            "required": true,
+            "default": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xOTIuMTY4LjAuMjA5XC9vbGVyb29tc1wvYXBpXC9jdXN0b21lci1sb2dpbiIsImlhdCI6MTY2NDc5NDk5NywiZXhwIjoxNjY0Nzk4NTk3LCJuYmYiOjE2NjQ3OTQ5OTcsImp0aSI6InZhS21VbmpyZjljOFVBWE0iLCJzdWIiOjIyOSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.QARxOXDonne2EsBQYfLbOhTRU7eYULVLHY1gxmBj0BU",
+            "type": "string"
+        }
+    }
+}

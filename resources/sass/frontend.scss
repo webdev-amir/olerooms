@@ -1,0 +1,33 @@
+// Variables
+//@import 'variables';
+
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~font-awesome/css/font-awesome.min.css';
+
+//Theme css
+@import '../../public/theme/dist/frontend/css/care438.css';
+@import '../../public/theme/dist/frontend/css/appe438.css';
+@import '../../public/theme/libs/daterange/daterangepicker.css';
+@import '../../public/theme/dist/frontend/css/animate.css';
+@import '../../public/theme/dist/frontend/css/custom.css';
+@import '../../public/theme/dist/frontend/css/custom-responsive.css';
+@import '../../public/theme/dist/frontend/css/customer.css';
+@import '../../public/theme/dist/frontend/css/ionicons.min.css';
+
+//use for vendor dashboard after login
+@import '../../public/theme/dist/frontend/css/user.css';
+@import '../../public/theme/dist/frontend/css/custom-dashboard.css';
+@import '../../public/theme/dist/frontend/css/dashboard-resposive.css';
+
+@import '../../public/theme/dist/frontend/css/event438.css';
+@import '../../public/css/star-rating-svg.css';
+// Lobibox
+@import "~lobibox/dist/css/lobibox.min.css";
+
+@import "~jquery-timepicker/jquery.timepicker.css";
+
+@import '~remixicon/fonts/remixicon.css';
+
+@import '~icofont/dist/icofont.min.css';
+
+@import '../css/developer.css';
